@@ -1,0 +1,39 @@
+{
+  "name": "quotiverse",
+  "version": "1.0.0",
+  "description": "Quotiverse is a robust and feature-rich quote generator API built with Express. It offers a comprehensive collection of inspirational, motivational, and thought-provoking quotes from various authors. With QuotableAPI, developers can easily integrate quotes into their applications, providing users with daily inspiration and wisdom. The API supports various features including quote search, categorization, author information, user contributions, and more.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "build" : "node server.js"
+  },
+  "keywords": [
+    "quotes",
+    "quote-generator",
+    "inspirational-quotes",
+    "motivational-quotes",
+    "express",
+    "nodejs",
+    "api",
+    "quote-api",
+    "wisdom",
+    "daily-quotes",
+    "famous-quotes",
+    "random-quotes",
+    "quote-search",
+    "author-info",
+    "multilingual",
+    "share-quotes",
+    "quote-categories"
+  ],
+  "author": "Houndini",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.2"
+  }
+}

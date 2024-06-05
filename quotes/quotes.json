@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "quote": {
+            "en": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+            "fr": "La plus grande gloire de vivre ne réside pas dans le fait de ne jamais tomber, mais de se relever à chaque fois que nous tombons."
+        },
+        "author": "Nelson Mandela",
+        "category": "Inspirational",
+        "tags": ["perseverance", "success"],
+        "rating": 4.9,
+        "image_url": "http://example.com/images/mandela.jpg",
+        "author_info": {
+            "bio": {
+                "en": "Nelson Mandela was a South African anti-apartheid revolutionary, political leader, and philanthropist.",
+                "fr": "Nelson Mandela était un révolutionnaire anti-apartheid sud-africain, un leader politique et un philanthrope."
+            },
+            "wiki_url": "https://en.wikipedia.org/wiki/Nelson_Mandela"
+        }
+    },
+    {
+        "id": 2,
+        "quote": {
+            "en": "The way to get started is to quit talking and begin doing.",
+            "fr": "La meilleure façon de commencer est d'arrêter de parler et de commencer à faire."
+        },
+        "author": "Walt Disney",
+        "category": "Motivational",
+        "tags": ["action", "initiative"],
+        "rating": 4.7,
+        "image_url": "http://example.com/images/disney.jpg",
+        "author_info": {
+            "bio": {
+                "en": "Walt Disney was an American entrepreneur, animator, writer, voice actor, and film producer.",
+                "fr": "Walt Disney était un entrepreneur américain, animateur, écrivain, acteur de voix et producteur de films."
+            },
+            "wiki_url": "https://en.wikipedia.org/wiki/Walt_Disney"
+        }
+    }
+] 

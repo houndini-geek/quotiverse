@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/main.js" defer></script>
+    <title>Quotiverse| Admin</title>
+</head>
+<body>
+    <div id="app">
+
+   
+<form action="/newquote" method="post" @submit.prevent="submitNewQuote">
+    <div class="section">
+        <h1>author</h1>
+        <label for="quote-author">
+            <input type="text" v-model="author" placeholder=" author">
+        </label>
+    </div>
+   
+    <div class="section">
+        <h1>category</h1>
+        <label for="quote-category">
+            <input type="text" v-model="category" placeholder="Quote category">
+        </label>
+    </div>
+
+    <div class="section">
+        <h1>tags</h1>
+        <label for="quote-tags">
+            <select name="quote-tags" id="quote-tags" @change="addTags">
+                <option value="success">success</option>
+                <option value="inspirational">inspirational</option>
+            </select>
+            <div class="selected-tags">
+               <span v-for="tag in tags">{{tag}}</span>
+            </div>
+        </label>
+       
+    </div>
+    <div class="section">
+        <h1>quote image url</h1>
+        <label for="quote-author-img">
+            <input type="url" v-model="image_url" placeholder="Quote author image url">
+        </label>
+    </div>
+
+    <div class="section">
+        <h1>quote author wiki url</h1>
+        <label for="quote-author-wiki">
+            <input type="url" v-model="wiki_url" placeholder="Quote author wiki url">
+        </label>
+    </div>
+    <div class="section">
+        <h1>quote</h1>
+        <label for="quote-en">
+            <textarea v-model="quote_en" placeholder="Quote in english"></textarea>
+        </label>
+        <label for="quote-fr">
+            <textarea v-model="quote_fr" placeholder="Quote in french"></textarea>
+        </label>
+    </div>
+    <div class="section">
+        <h1>author info</h1>
+        <label for="bio-en">
+            <textarea v-model="bio_en" placeholder="Author bio english"></textarea>
+        </label>
+        <label for="bio-fr">
+            <textarea v-model="bio_fr" placeholder="Author bio french"></textarea>
+        </label>
+    </div>
+
+    <button type="submit">submit</button>
+</form>
+</div>
+</body>
+</html>

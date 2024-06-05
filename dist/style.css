@@ -1,0 +1,99 @@
+*,*::before, *::after {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    width: min(100%,1300px);
+    text-align: center;
+    margin: 0 auto 0;
+    background-color: #F1F1F1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+form {
+
+    width: min(98%,450px);
+    margin: 3% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    border: 1px solid;
+    padding: 0.7em;
+}
+
+form .section {
+
+    width: 100%;
+    text-align: left;
+}
+
+.section h1 {
+
+    text-transform: capitalize;
+    font-size: 1.2em;
+    padding: 0.5em 0;
+}
+
+.section label input,
+textarea, select {
+    width: 100%;
+    display: block;
+    outline:none;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.7em;
+    border-radius: 0.4em;
+    border: 1px solid rgba(183,185,190,0.4);
+}
+
+.section label input, select {
+
+    height: 3.3em;
+}
+
+.section label textarea {
+
+    height: 17em;
+    margin: 0.3em 0;
+}
+
+.section label .selected-tags {
+
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: auto;
+    padding: 1em;
+}
+
+.section label .selected-tags span {
+
+    margin: 0 1em;
+    cursor: pointer;
+    font-weight: 400;
+    background-color: rgba(183,185,190,0.2);
+    color: #262626;
+    padding: 0.6em;
+    border-radius: 0.5em;
+}
+
+form button {
+
+    width: 100%;
+    display: block;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    height: 2em;
+    background-color: rgb(228, 161, 18);
+    cursor: pointer;
+}
